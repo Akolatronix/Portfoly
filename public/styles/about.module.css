@@ -1,0 +1,61 @@
+.container{
+    background-color: var(--primary);
+    color: var(--secundary);
+}
+.subcontainer{
+    display: flex;
+    align-items: center;
+    padding: 4rem 7rem;
+}
+.card{
+    view-timeline-name: --txt;
+    view-timeline-axis: block;
+    animation-timeline: --txt;
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+    animation-name: show;
+    background-color: var(--secundary);
+    color: var(--primary);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 15px;
+}
+.card h4{
+    margin-bottom: 4px;
+}
+.aboutme{
+    width: 100%;
+    margin: 0 4rem;
+}
+.aboutme h4, .aboutme h5,.aboutme h6, .aboutme p{
+    view-timeline-name: --txt;
+    view-timeline-axis: block;
+    animation-timeline: --txt;
+    animation-range: entry 25% cover 20%;
+    animation-fill-mode: backwards;
+    animation-name: show;
+
+    margin-bottom: 4px;
+}
+.aboutme h4{
+    font-size: 1rem
+}
+.aboutme h5{
+    font-size: 2rem;
+}
+.aboutme h6{
+    font-size: 1.7rem;
+}
+.aboutme p{
+    width: 80%;
+}
+@keyframes show {
+    from{
+        opacity: 0;
+        scale: 25%;
+        }
+        to{
+        opacity: 1;
+        scale: 100%;
+    }
+}

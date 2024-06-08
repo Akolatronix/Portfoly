@@ -1,0 +1,55 @@
+.container{
+    position: relative;
+    padding-top: 100vh; /* Ajusta esto según la altura de .absolute-div */
+
+}
+.background{
+    position: absolute;
+    top:0 ;
+    z-index: -1;
+    background-image: url(../img/background.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.container .backgroundColor{
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.308);
+
+}
+.txtContainer{
+    
+    max-width: 600px;
+    text-align: center;
+    color: var(--secundary);
+    background-color: rgba(255, 255, 255, 0.165);
+    animation: txtShow 1500ms ease;
+}
+.backgroundColor:hover{
+    background-color: red;
+}
+@keyframes txtShow {
+    0%{
+        opacity: 0;
+        transform: translateX(-50vw);
+    }
+    99%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+/*Button*/
+.container .btnIndex{
+    display: flex;
+    justify-content: flex-end;
+}

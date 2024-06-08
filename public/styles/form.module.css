@@ -1,0 +1,61 @@
+/* styles/Form.module.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}  
+.form {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}  
+.form.visible {
+    opacity: 1;
+    transform: translateY(0);
+}  
+.inputGroup {
+    margin-bottom: 1rem;
+}
+.input,.textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-top: none;
+    border-left: none;
+}  
+  /* Agrega una clase o un identificador al selector button */
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #0070f3;
+    color: white;
+    cursor: pointer;
+}  
+.button:hover {
+    background-color: #005bb5;
+}
+.input:focus {
+    border-top: none;
+    outline: none;
+}
+/* Placeholder cuando el input está vacío */
+.input::placeholder {
+    font-size: 1rem; /* Tamaño de fuente por defecto */
+    transition: transform 0.3s ease, font-size 0.3s ease; /* Transición suave para transformación y tamaño de fuente */
+    transform-origin: left bottom; /* Origen de la transformación */
+} 
+  /* Placeholder cuando el input tiene foco o contenido */
+.input:focus::placeholder, .input:not(:placeholder-shown)::placeholder {
+    font-size: 0.9rem; /* Tamaño de fuente reducido */
+    transform: translateY(-1rem); /* Desplazamiento hacia arriba */
+}

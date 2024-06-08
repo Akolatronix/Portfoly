@@ -1,0 +1,2 @@
+Estoy siempre en busca de nuevas oportunidades para seguir ampliando mis habilidades y conocimientos en el campo de la programación. 
+Si estás buscando un desarrollador Full Stack comprometido, creativo y apasionado por la tecnología, ¡no dudes en contactarme!
